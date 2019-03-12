@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Conv_MyriadPro-Bold';
+    src: local('☺'), url('fonts/MyriadPro-Bold.woff') format('woff'), url('fonts/MyriadPro-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_MyriadPro-LightSemiExt';
+    src: local('☺'), url('fonts/MyriadPro-LightSemiExt.woff') format('woff'), url('fonts/MyriadPro-LightSemiExt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_MyriadPro-Regular';
+    src: local('☺'), url('fonts/MyriadPro-Regular.woff') format('woff'), url('fonts/MyriadPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import './components/profile/profile.scss';
