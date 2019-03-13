@@ -1,0 +1,44 @@
+.header {
+    &__frame {
+        height: 358px;
+        width: 358px;
+        border-radius: 50%;
+        border: 1px solid #3d6cb0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 135px auto 40px auto;
+    }
+
+    &__photo {
+        height: 312px;
+        width: 312px;
+        border-radius: 50%;
+        background-color: #3d6cb0;
+    }
+
+    &__title {
+        font-family: 'Myriad Pro',
+            sans-serif;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 82px;
+        height: 53px;
+        margin: 0;
+        padding-bottom: 20px;
+        text-align: center;
+
+        &_type_bold {
+            font-weight: bold;
+            font-size: 95px;
+            height: 65;
+            margin-bottom: 35px;
+        }
+    }
+
+    &__subtitle {
+        font-weight: bold;
+        text-align: center;
+        margin: 0;
+    }
+}

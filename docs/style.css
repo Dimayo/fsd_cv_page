@@ -1,1 +1,95 @@
-@charset "UTF-8";@font-face{font-family:Conv_MyriadPro-Bold;src:local("☺"),url(fonts/MyriadPro-Bold.woff) format("woff"),url(fonts/MyriadPro-Bold.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:Conv_MyriadPro-LightSemiExt;src:local("☺"),url(fonts/MyriadPro-LightSemiExt.woff) format("woff"),url(fonts/MyriadPro-LightSemiExt.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:Conv_MyriadPro-Regular;src:local("☺"),url(fonts/MyriadPro-Regular.woff) format("woff"),url(fonts/MyriadPro-Regular.ttf) format("truetype");font-weight:400;font-style:normal}.text{font-size:60px}
+@charset "UTF-8";
+@font-face {
+  font-family: 'Myriad Pro';
+  src: local("☺"), url("fonts/MyriadPro-Bold.woff") format("woff"), url("fonts/MyriadPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: local("☺"), url("fonts/MyriadPro-LightSemiExt.woff") format("woff"), url("fonts/MyriadPro-LightSemiExt.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: local("☺"), url("fonts/MyriadPro-Regular.woff") format("woff"), url("fonts/MyriadPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+.document__header {
+  margin: 0 0 158px 0; }
+
+.title {
+  font-size: 63px;
+  height: 63px;
+  font-family: 'Myriad Pro',
+ sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #3d6cb0;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-grow: 1;
+  padding-left: 18px; }
+  .title::after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 100%;
+    height: 7px;
+    background:#3d6cb0 ;
+    border: solid #fff;
+    border-width: 0 10px;
+    margin-right: -100%;
+    margin-bottom: 13px; }
+
+.subtitle {
+  font-family: 'Myriad Pro',
+ sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 38px;
+  height: 26px; }
+
+.header__frame {
+  height: 358px;
+  width: 358px;
+  border-radius: 50%;
+  border: 1px solid #3d6cb0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 135px auto 40px auto; }
+
+.header__photo {
+  height: 312px;
+  width: 312px;
+  border-radius: 50%;
+  background-color: #3d6cb0; }
+
+.header__title {
+  font-family: 'Myriad Pro',
+ sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 82px;
+  height: 53px;
+  margin: 0;
+  padding-bottom: 20px;
+  text-align: center; }
+  .header__title_type_bold {
+    font-weight: bold;
+    font-size: 95px;
+    height: 65;
+    margin-bottom: 35px; }
+
+.header__subtitle {
+  font-weight: bold;
+  text-align: center;
+  margin: 0; }
+
+.profile__inner {
+  display: flex; }
+

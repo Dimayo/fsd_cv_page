@@ -1,22 +1,26 @@
 @font-face {
-    font-family: 'Conv_MyriadPro-Bold';
+    font-family: 'Myriad Pro';
     src: local('☺'), url('fonts/MyriadPro-Bold.woff') format('woff'), url('fonts/MyriadPro-Bold.ttf') format('truetype');
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Conv_MyriadPro-LightSemiExt';
+    font-family: 'Myriad Pro';
     src: local('☺'), url('fonts/MyriadPro-LightSemiExt.woff') format('woff'), url('fonts/MyriadPro-LightSemiExt.ttf') format('truetype');
-    font-weight: normal;
+    font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Conv_MyriadPro-Regular';
+    font-family: 'Myriad Pro';
     src: local('☺'), url('fonts/MyriadPro-Regular.woff') format('woff'), url('fonts/MyriadPro-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
+@import './components/document/document.scss';
+@import './components/title/title.scss';
+@import './components/subtitle/subtitle.scss';
+@import './components/header/header.scss';
 @import './components/profile/profile.scss';
