@@ -91,9 +91,9 @@
   !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??ref--6-2!./node_modules/sass-loader/lib/loader.js!./src/index.scss ***!
   \***********************************************************************************************************************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/index.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??ref--6-2!./node_modules/sass-loader/lib/loader.js");
+eval("throw new Error(\"Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/lib/loader.js):\\n\\r\\n@import './components/education/experience.scss';\\r\\n^\\r\\n      File to import not found or unreadable: ./components/education/experience.scss.\\r\\n      in C:\\\\Code\\\\GitHub\\\\fsd_cv_page\\\\src\\\\index.scss (line 32, column 1)\\n    at runLoaders (C:\\\\Code\\\\GitHub\\\\fsd_cv_page\\\\node_modules\\\\webpack\\\\lib\\\\NormalModule.js:301:20)\\n    at C:\\\\Code\\\\GitHub\\\\fsd_cv_page\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js:367:11\\n    at C:\\\\Code\\\\GitHub\\\\fsd_cv_page\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js:233:18\\n    at context.callback (C:\\\\Code\\\\GitHub\\\\fsd_cv_page\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js:111:13)\\n    at Object.render [as callback] (C:\\\\Code\\\\GitHub\\\\fsd_cv_page\\\\node_modules\\\\sass-loader\\\\lib\\\\loader.js:52:13)\\n    at Object.done [as callback] (C:\\\\Code\\\\GitHub\\\\fsd_cv_page\\\\node_modules\\\\neo-async\\\\async.js:8077:18)\\n    at options.error (C:\\\\Code\\\\GitHub\\\\fsd_cv_page\\\\node_modules\\\\node-sass\\\\lib\\\\index.js:294:32)\");\n\n//# sourceURL=webpack:///./src/index.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??ref--6-2!./node_modules/sass-loader/lib/loader.js");
 
 /***/ }),
 
@@ -119,6 +119,39 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 
 /***/ }),
 
+/***/ "./src/components/contact/contact.svg":
+/*!********************************************!*\
+  !*** ./src/components/contact/contact.svg ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/contact.svg\";\n\n//# sourceURL=webpack:///./src/components/contact/contact.svg?");
+
+/***/ }),
+
+/***/ "./src/components/education/education.svg":
+/*!************************************************!*\
+  !*** ./src/components/education/education.svg ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/education.svg\";\n\n//# sourceURL=webpack:///./src/components/education/education.svg?");
+
+/***/ }),
+
+/***/ "./src/components/experience/experience.svg":
+/*!**************************************************!*\
+  !*** ./src/components/experience/experience.svg ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/experience.svg\";\n\n//# sourceURL=webpack:///./src/components/experience/experience.svg?");
+
+/***/ }),
+
 /***/ "./src/components/profile/profile.svg":
 /*!********************************************!*\
   !*** ./src/components/profile/profile.svg ***!
@@ -130,6 +163,28 @@ eval("module.exports = __webpack_require__.p + \"images/profile.svg\";\n\n//# so
 
 /***/ }),
 
+/***/ "./src/components/skills/skills.svg":
+/*!******************************************!*\
+  !*** ./src/components/skills/skills.svg ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/skills.svg\";\n\n//# sourceURL=webpack:///./src/components/skills/skills.svg?");
+
+/***/ }),
+
+/***/ "./src/components/software/software.svg":
+/*!**********************************************!*\
+  !*** ./src/components/software/software.svg ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/software.svg\";\n\n//# sourceURL=webpack:///./src/components/software/software.svg?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -138,7 +193,7 @@ eval("module.exports = __webpack_require__.p + \"images/profile.svg\";\n\n//# so
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_profile_profile_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/profile/profile.svg */ \"./src/components/profile/profile.svg\");\n/* harmony import */ var _components_profile_profile_svg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_profile_profile_svg__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_profile_profile_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/profile/profile.svg */ \"./src/components/profile/profile.svg\");\n/* harmony import */ var _components_profile_profile_svg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_profile_profile_svg__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_contact_contact_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/contact/contact.svg */ \"./src/components/contact/contact.svg\");\n/* harmony import */ var _components_contact_contact_svg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_contact_contact_svg__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _components_skills_skills_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/skills/skills.svg */ \"./src/components/skills/skills.svg\");\n/* harmony import */ var _components_skills_skills_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_skills_skills_svg__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _components_education_education_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/education/education.svg */ \"./src/components/education/education.svg\");\n/* harmony import */ var _components_education_education_svg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_education_education_svg__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _components_experience_experience_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/experience/experience.svg */ \"./src/components/experience/experience.svg\");\n/* harmony import */ var _components_experience_experience_svg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_components_experience_experience_svg__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _components_software_software_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/software/software.svg */ \"./src/components/software/software.svg\");\n/* harmony import */ var _components_software_software_svg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_software_software_svg__WEBPACK_IMPORTED_MODULE_5__);\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 

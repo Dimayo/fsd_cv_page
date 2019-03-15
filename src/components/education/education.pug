@@ -1,18 +1,17 @@
+include ../title/title.pug
+include ../description/description.pug
+-let eduText = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'
+-const blue = 'subtitle subtitle_blue'
+
 section(class="education")
-h2(class="title") Education
-h3(class="subtitle") Master Degree
-p(class="education__date") Feb 2011 - Jun 2014
-h3(class="subtitle") University Name
-p(class="text") Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
-h3(class="subtitle") Master Degree
-p(class="education__date") Feb 2011 - Jun 2014
-h3(class="subtitle") University Name
-p(class="text") Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
-h3(class="subtitle") Master Degree
-p(class="education__date") Feb 2011 - Jun 2014
-h3(class="subtitle") University Name
-p(class="text") Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
-h3(class="subtitle") Master Degree
-p(class="education__date") Feb 2011 - Jun 2014
-h3(class="subtitle") University Name
-p(class="text") Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+ +title('images/education.svg', 'Education')
+ ul(class="education__list")
+  +description('Master Degree', '// Feb 2011 - Jun 2014', 'University name', eduText)(class= blue)
+  +description('Master Degree', '// Feb 2011 - Jun 2014', 'University name', eduText)(class= blue)
+  +description('Master Degree', '// Feb 2011 - Jun 2014', 'University name', eduText)(class= blue)
+  +description('Master Degree', '// Feb 2011 - Jun 2014', 'University name', eduText)(class= blue)
+ 
+
+  
+
+

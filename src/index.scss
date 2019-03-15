@@ -19,8 +19,14 @@
     font-style: normal;
 }
 
-@import './components/document/document.scss';
 @import './components/title/title.scss';
 @import './components/subtitle/subtitle.scss';
+@import './components/text/text.scss';
+@import './components/description/description.scss';
+@import './components/document/document.scss';
 @import './components/header/header.scss';
 @import './components/profile/profile.scss';
+@import './components/contact/contact.scss';
+@import './components/skills/skills.scss';
+@import './components/education/education.scss';
+@import './components/education/experience.scss';

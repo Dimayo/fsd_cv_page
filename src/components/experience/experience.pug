@@ -1,14 +1,12 @@
+include ../title/title.pug
+include ../description/description.pug
+-let expText = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'
+-const bold = 'subtitle subtitle_bold'
+
 section(class="experience")
-h2(class="title") Experience
-h3(class="subtitle") Company name
-p(class="education__date") Feb 2011 - Jun 2014
-h3(class="subtitle") Your job here
-p(class="text") Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
-h3(class="subtitle") Company name
-p(class="education__date") Feb 2011 - Jun 2014
-h3(class="subtitle") Your job here
-p(class="text") Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
-h3(class="subtitle") Company name
-p(class="education__date") Feb 2011 - Jun 2014
-h3(class="subtitle") Your job here
-p(class="text") Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+ +title('images/experience.svg', 'Experience')
+ ul(class="education__list")
+  +description('Master Degree', '// Feb 2011 - Jun 2014', 'University name', expText)(class= bold)
+  +description('Master Degree', '// Feb 2011 - Jun 2014', 'University name', expText)(class= bold)
+  +description('Master Degree', '// Feb 2011 - Jun 2014', 'University name', expText)(class= bold)
+  +description('Master Degree', '// Feb 2011 - Jun 2014', 'University name', expText)(class= bold)

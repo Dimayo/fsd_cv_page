@@ -1,0 +1,33 @@
+.contact {
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        width: 500px;
+    }
+
+    &__termin {
+        flex-shrink: 0;
+        width: 200px;
+        margin: 0;
+        text-align: left;
+        font-size: 31px;
+        font-family: 'Myriad Pro',
+            sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #0270ba;
+        margin-bottom: 46px;
+    }
+
+    &__description {
+        width: 300px;
+        flex-shrink: 0;
+        margin: 0;
+        text-align: left;
+        font-family: 'Myriad Pro',
+        sans-serif;
+        font-weight: 400;
+        font-size: 31px;
+    }
+}

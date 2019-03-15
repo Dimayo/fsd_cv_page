@@ -1,6 +1,21 @@
+include ../title/title.pug
+
+mixin skills(name,level)
+ h3(class="subtitle")= name
+ - for (let i = 0; i < 12; i++)
+ if i < level
+   span(class="skills__dot skills__dot_color_blue")
+ else
+   span(class="skills__dot")
+   
 section(class="skills")
-h2(class="title") Skills
-h3(class="subtitle") Creative
-h3(class="subtitle") Teamwork
-h3(class="subtitle") Innovate
-h3(class="subtitle") Communication
+ +title('images/skills.svg', 'Skills')
+ .skills__items 
+  +skills('Creative', '9')
+  +skills('Teamwork', '11') 
+  +skills('Innovate', '6') 
+  +skills('Communication', '11')    
+    
+
+
+

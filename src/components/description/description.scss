@@ -1,0 +1,24 @@
+.description {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: -60px;
+        top: 9px;
+        background-color: #000;
+        border-radius: 50%;
+
+    }
+
+    &__date {
+        font-family: 'Myriad Pro',
+            sans-serif;
+        font-weight: normal;
+        text-transform: none;
+        color: #000000;
+        padding-left: 30px;   
+    }
+}

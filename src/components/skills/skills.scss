@@ -1,0 +1,17 @@
+.skills {
+    &__items {
+        margin: auto;
+        text-align: center;
+    }
+    &__dot {
+        height: 27px;
+        width: 27px;
+        background-color:#e6e6e6;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 15px;
+        &_color_blue {
+            background-color:#0270ba;
+        }
+    }
+}

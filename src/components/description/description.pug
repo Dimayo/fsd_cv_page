@@ -1,0 +1,6 @@
+mixin description(title, date, subtitle, text)
+ li(class="description")
+    h3(class!=attributes.class)= title
+     span(class="description__date")= date
+    h3(class="subtitle")= subtitle
+    p(class="text")= text
