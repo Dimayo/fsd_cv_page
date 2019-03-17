@@ -1,12 +1,12 @@
 include ../title/title.pug
-include ../description/description.pug
--let expText = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'
--const bold = 'subtitle subtitle_bold'
+include ../items/items.pug
 
 section(class="experience")
  +title('images/experience.svg', 'Experience')
- ul(class="education__list")
-  +description('Master Degree', '// Feb 2011 - Jun 2014', 'University name', expText)(class= bold)
-  +description('Master Degree', '// Feb 2011 - Jun 2014', 'University name', expText)(class= bold)
-  +description('Master Degree', '// Feb 2011 - Jun 2014', 'University name', expText)(class= bold)
-  +description('Master Degree', '// Feb 2011 - Jun 2014', 'University name', expText)(class= bold)
+ ul(class="experience__list")
+  +items([
+      {title: "Company name", date:"Feb 2011 - Jun 2014", subtitle: "Your job here", text},
+      {title: "Company name", date:"Feb 2011 - Jun 2014", subtitle: "Your job here", text},
+      {title: "Company name", date:"Feb 2011 - Jun 2014", subtitle: "Your job here", text}
+  ])(class="subtitle_bold")
+  

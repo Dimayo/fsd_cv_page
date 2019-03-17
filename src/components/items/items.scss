@@ -1,4 +1,4 @@
-.description {
+.items {
     position: relative;
 
     &::before {
@@ -19,6 +19,6 @@
         font-weight: normal;
         text-transform: none;
         color: #000000;
-        padding-left: 30px;   
+        padding-left: 30px;
     }
 }
