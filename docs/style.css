@@ -19,7 +19,7 @@
 
 .title {
   display: flex; }
-  .title .title__text {
+  .title__text {
     font-size: 63px;
     height: 63px;
     font-family: 'Myriad Pro', sans-serif;
@@ -30,7 +30,7 @@
     flex-shrink: 0;
     flex-grow: 1;
     padding-left: 18px; }
-    .title .title__text::after {
+    .title__text::after {
       content: '';
       display: inline-block;
       vertical-align: middle;
@@ -78,8 +78,18 @@
     color: #000000;
     padding-left: 30px; }
 
-.document__header {
-  margin: 0 0 158px 0; }
+.body {
+  display: flex; }
+  .body__header {
+    margin: 0 0 108px 0;
+    padding-top: 135px; }
+  .body__first-column {
+    max-width: 634px;
+    margin: 0 3%; }
+  .body__second-column {
+    max-width: 965px;
+    padding-top: 90px;
+    margin: 0 3%; }
 
 .header__frame {
   height: 358px;
@@ -89,7 +99,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 135px auto 40px auto; }
+  margin: 0 auto 40px auto; }
 
 .header__photo {
   height: 312px;
@@ -167,4 +177,20 @@
 .experience__list {
   list-style-type: none;
   margin-left: 33px; }
+
+.software__bar {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 426px;
+  height: 35px; }
+  .software__bar::-webkit-progress-value {
+    background-color: #0270ba; }
+  .software__bar::-webkit-progress-bar {
+    background-color: #e6e6e6; }
+
+.software__inner {
+  display: flex; }
+
+.software__column {
+  margin-right: 105px; }
 

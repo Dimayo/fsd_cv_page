@@ -1,6 +1,6 @@
 include ../title/title.pug
 
-mixin skills(name,level)
+mixin skills__item(name,level)
  h3(class="subtitle")= name
  - for (let i = 0; i < 12; i++)
  if i < level
@@ -11,10 +11,10 @@ mixin skills(name,level)
 section(class="skills")
  +title('images/skills.svg', 'Skills')
  .skills__items 
-  +skills('Creative', '9')
-  +skills('Teamwork', '11') 
-  +skills('Innovate', '6') 
-  +skills('Communication', '11')    
+  +skills__item('Creative', '9')
+  +skills__item('Teamwork', '11') 
+  +skills__item('Innovate', '6') 
+  +skills__item('Communication', '11')    
     
 
 

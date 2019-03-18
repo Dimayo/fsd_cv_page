@@ -1,16 +1,18 @@
 include ../title/title.pug
 
+mixin software__item(name, level)
+ h3(class="subtitle")= name
+ progress(class="software__bar" max=100 value= level)
+
 section(class="software")
  +title('images/software.svg', 'Software')
- h3(class="subtitle") Photoshop
- progress(class="software__bar" max=100 value=90)
- h3(class="subtitle") Dreamweaver
- progress(class="software__bar" max=100 value=80)
- h3(class="subtitle") Illustrator
- progress(class="software__bar" max=100 value=70)
- h3(class="subtitle") After effects
- progress(class="software__bar" max=100 value=60)
- h3(class="subtitle") Indesign
- progress(class="software__bar" max=100 value=55)
- h3(class="subtitle") Html&Css3
- progress(class="software__bar" max=100 value=90)
+ .software__inner
+  .software__column
+   +software__item('Photoshop', '90')
+   +software__item('Illustrator', '70')
+   +software__item('Indesign', '60')
+  .software__column
+   +software__item('Dreamweaver', '80')
+   +software__item('After Effects', '65')
+   +software__item('HTML&CSS3', '90')
+

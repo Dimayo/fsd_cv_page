@@ -1,0 +1,23 @@
+.software {
+    &__bar {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 426px;
+        height: 35px;
+
+        &::-webkit-progress-value {
+            background-color: #0270ba;
+        }
+
+        &::-webkit-progress-bar {
+            background-color: #e6e6e6;
+        }
+    }
+
+    &__inner {
+        display: flex;
+    }
+    &__column {
+        margin-right: 105px;
+    }
+}

@@ -6,11 +6,13 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title CV
         link(href="style.css" rel="stylesheet")
-    body
-     include ./components/header/header.pug
-     include ./components/profile/profile.pug
-     include ./components/contact/contact.pug
-     include ./components/skills/skills.pug
-     include ./components/education/education.pug
-     include ./components/experience/experience.pug
-     include ./components/software/software.pug
+    body.body
+     .body__first-column
+      include ./components/header/header.pug
+      include ./components/profile/profile.pug
+      include ./components/contact/contact.pug
+      include ./components/skills/skills.pug
+     .body__second-column
+      include ./components/education/education.pug
+      include ./components/experience/experience.pug
+      include ./components/software/software.pug
