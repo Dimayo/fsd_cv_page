@@ -17,12 +17,23 @@
         font-family: 'Myriad Pro',
             sans-serif;
         font-weight: normal;
-        text-transform: none;
         color: #000000;
         padding-left: 1.3rem;
+        font-size: 1.963rem;
+        @media (max-width: 605px) {
+             padding-left: 0;
+        }
     }
 
     &__text {
         margin: 1.42rem 0 0.8em 0;
     }
+
+    &__header {
+        display: flex;
+         @media (max-width: 605px) {
+             flex-direction: column;
+         }
+    }
+    
 }

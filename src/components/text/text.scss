@@ -4,4 +4,7 @@
     font-weight: normal;
     font-size: 1.193rem;
     margin:0;
+     @media (max-width: 605px) {
+         font-size: 2rem;
+     }
 }

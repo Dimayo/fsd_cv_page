@@ -4,6 +4,12 @@
     min-width: 320px;
     justify-content: space-between;
 
+    @media (max-width: 1155px) {
+        display:block;
+        max-width: 1000px;
+        margin:auto;
+    }
+
     &__header {
         margin: 0 0 5.5rem 0;
         padding-top: 6.35rem;
@@ -24,12 +30,21 @@
     &__first-column {
         max-width: 34%;
         margin: 0 3%;
+
+        @media (max-width: 1155px) {
+            max-width: 100%;
+            
+        }
     }
 
     &__second-column {
         max-width: 52%;
         padding-top: 4.7rem;
         margin: 0 3%;
+
+        @media (max-width: 1155px) {
+              max-width: 100%;
+        }
     }
 
 }

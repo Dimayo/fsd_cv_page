@@ -1,7 +1,7 @@
 .skills {
     &__items {
-        margin: auto;
         text-align: center;
+        margin:auto;
     }
 
     &__dot {
@@ -23,9 +23,5 @@
 
     &__subtitle {
         margin-bottom: 1.6rem;
-    }
-
-    &__items{
-        display: inline-block;
     }
 }
