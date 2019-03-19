@@ -3,14 +3,15 @@ include ../items/items.pug
 
 - const text = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."
 
-section(class="education")
+section(class="education body__education")
  +title('images/education.svg', 'Education')
  ul(class="education__list")
   +items([
       {title: "Master Degree", date:"Feb 2011 - Jun 2014", subtitle: "University name", text},
       {title: "Master Degree", date:"Feb 2011 - Jun 2014", subtitle: "University name", text},
+      {title: "Master Degree", date:"Feb 2011 - Jun 2014", subtitle: "University name", text},
       {title: "Master Degree", date:"Feb 2011 - Jun 2014", subtitle: "University name", text}
-  ])(class="subtitle_blue")
+  ])(class="subtitle_blue education__subtitle")
  
 
   

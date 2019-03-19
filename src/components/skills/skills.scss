@@ -3,15 +3,29 @@
         margin: auto;
         text-align: center;
     }
+
     &__dot {
-        height: 27px;
-        width: 27px;
-        background-color:#e6e6e6;
+        height: 1.347rem;
+        width: 1.347rem;
+        background-color: #e6e6e6;
         border-radius: 50%;
         display: inline-block;
-        margin-right: 15px;
+        margin: 0 0.924rem 1.5rem 0;
+
         &_color_blue {
-            background-color:#0270ba;
+            background-color: #0270ba;
         }
+    }
+
+    &__title {
+        margin: 0 0 1rem 0;
+    }
+
+    &__subtitle {
+        margin-bottom: 1.6rem;
+    }
+
+    &__items{
+        display: inline-block;
     }
 }

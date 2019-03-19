@@ -3,31 +3,32 @@
     &__items {
         display: flex;
         flex-wrap: wrap;
-        width: 500px;
+        width: 100%;
+        margin:1.5rem 0.2rem 0.7rem 0.2rem;
     }
 
     &__termin {
         flex-shrink: 0;
-        width: 200px;
+        width: 30%;
         margin: 0;
         text-align: left;
-        font-size: 31px;
+        font-size: 1.578rem;
         font-family: 'Myriad Pro',
             sans-serif;
         font-weight: 700;
         text-transform: uppercase;
         color: #0270ba;
-        margin-bottom: 46px;
+        margin-bottom: 2.4vw;
     }
 
     &__description {
-        width: 300px;
+        width: 70%;
         flex-shrink: 0;
         margin: 0;
         text-align: left;
         font-family: 'Myriad Pro',
         sans-serif;
         font-weight: 400;
-        font-size: 31px;
+        font-size: 1.578rem;
     }
 }

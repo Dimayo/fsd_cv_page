@@ -1,15 +1,16 @@
 include ../title/title.pug
 
 mixin skills__item(name,level)
- h3(class="subtitle")= name
- - for (let i = 0; i < 12; i++)
- if i < level
-   span(class="skills__dot skills__dot_color_blue")
- else
-   span(class="skills__dot")
+ h3(class="subtitle skills__subtitle")= name
+ div.skills__items
+  - for (let i = 0; i < 12; i++)
+  if i < level
+    span(class="skills__dot skills__dot_color_blue")
+  else
+    span(class="skills__dot")
    
 section(class="skills")
- +title('images/skills.svg', 'Skills')
+ +title('images/skills.svg', 'Skills')(class="skills__title")
  .skills__items 
   +skills__item('Creative', '9')
   +skills__item('Teamwork', '11') 

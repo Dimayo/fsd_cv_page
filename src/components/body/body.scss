@@ -1,17 +1,35 @@
 .body {
     display: flex;
+    max-width: 1920px;
+    min-width: 320px;
+    justify-content: space-between;
+
     &__header {
-        margin: 0 0 108px 0;
-        padding-top: 135px;
+        margin: 0 0 5.5rem 0;
+        padding-top: 6.35rem;
     }
+
+    &__profile {
+        margin: 0 0 2.7rem 0;
+    }
+
+    &__education {
+        margin: 0 0 3.3rem 0;
+    }
+
+    &__experience {
+        margin: 0 0 3.2rem 0;
+    }
+
     &__first-column {
-        max-width: 634px;
-        margin: 0 3%
-    }
-    &__second-column {
-        max-width: 965px;
-        padding-top: 90px;
+        max-width: 34%;
         margin: 0 3%;
     }
-   
+
+    &__second-column {
+        max-width: 52%;
+        padding-top: 4.7rem;
+        margin: 0 3%;
+    }
+
 }

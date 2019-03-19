@@ -1,11 +1,11 @@
 include ../title/title.pug
 
 mixin software__item(name, level)
- h3(class="subtitle")= name
+ h3(class="subtitle software__subtitle")= name
  progress(class="software__bar" max=100 value= level)
 
 section(class="software")
- +title('images/software.svg', 'Software')
+ +title('images/software.svg', 'Software')(class="software__title")
  .software__inner
   .software__column
    +software__item('Photoshop', '90')

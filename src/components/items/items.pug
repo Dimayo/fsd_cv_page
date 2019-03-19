@@ -4,4 +4,4 @@ mixin items(options = [title, date, subtitle, text])
      h3.subtitle(class!=attributes.class)= option.title
       span(class="items__date") // #{option.date}
      h3(class="subtitle")= option.subtitle
-     p(class="text")= option.text
+     p(class="text items__text")= option.text

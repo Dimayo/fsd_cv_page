@@ -1,12 +1,12 @@
 include ../title/title.pug
 include ../items/items.pug
 
-section(class="experience")
- +title('images/experience.svg', 'Experience')
+section(class="experience body__experience")
+ +title('images/experience.svg', 'Experience')(class="experience__title")
  ul(class="experience__list")
   +items([
       {title: "Company name", date:"Feb 2011 - Jun 2014", subtitle: "Your job here", text},
       {title: "Company name", date:"Feb 2011 - Jun 2014", subtitle: "Your job here", text},
       {title: "Company name", date:"Feb 2011 - Jun 2014", subtitle: "Your job here", text}
-  ])(class="subtitle_bold")
+  ])(class="subtitle_bold experience__subtitle")
   
