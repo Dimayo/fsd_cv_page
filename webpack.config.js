@@ -20,14 +20,13 @@ module.exports = {
         ]
     },
     output: {
-        path: path.resolve(__dirname, './docs/'),
-        filename: './bundle.js',
-        publicPath: 'docs/'
+        path: path.resolve(__dirname, 'docs/'),
+        filename: 'bundle.js',
     },
     module: {
         rules: [{
                 test: /\.js$/,
-                include: path.resolve(__dirname, 'src/js'),
+                exclude: [/node_modules/],
                 use: {
                     loader: 'babel-loader',
                     options: {
@@ -59,28 +58,26 @@ module.exports = {
                 ]
 
             },
-             {
-                 test: /\.(png|jpg|gif|svg)$/,
-                 use: [{
-                     loader: 'file-loader',
-                     options: {
-                         outputPath: 'images',
-                          name: '[name].[ext]',
-                     },
-                 }, ],
-             },
+            {
+                test: /\.(png|jpg|gif|svg)$/,
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        outputPath: 'images',
+                        name: '[name].[ext]',
+                    },
+                }, ],
+            },
         ]
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: './style.css'
+            filename: 'style.css'
         }),
-        new CopyWebpackPlugin([
-            {
-                from: './src/fonts',
-                to: './fonts'
-            }
-        ]),
+        new CopyWebpackPlugin([{
+            from: './src/fonts',
+            to: './fonts'
+        }]),
         new HtmlWebpackPlugin({
             template: './src/index.pug',
             filename: 'index.html'
