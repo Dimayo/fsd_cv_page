@@ -1,1 +1,365 @@
-@charset "UTF-8";@font-face{font-family:Myriad Pro;src:local("☺"),url(fonts/MyriadPro-Bold.woff) format("woff"),url(fonts/MyriadPro-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:Myriad Pro;src:local("☺"),url(fonts/MyriadPro-LightSemiExt.woff) format("woff"),url(fonts/MyriadPro-LightSemiExt.ttf) format("truetype");font-weight:300;font-style:normal}@font-face{font-family:Myriad Pro;src:local("☺"),url(fonts/MyriadPro-Regular.woff) format("woff"),url(fonts/MyriadPro-Regular.ttf) format("truetype");font-weight:400;font-style:normal}.document{font-size:20px}@media (max-width:1638px){.document{font-size:17px}}@media (max-width:1395px){.document{font-size:14px}}@media (max-width:605px){.document{font-size:10px}}.title{height:7rem}.title,.title__text{display:flex;align-items:center}.title__text{font-size:3.157rem;font-family:Myriad Pro,sans-serif;font-weight:700;text-transform:uppercase;color:#0270ba;padding-left:.8rem;flex-shrink:1;flex-grow:1;margin:0}.title__text:after{content:"";width:100%;height:.36vw;background:#0270ba;margin-left:10px}.title__image{width:5.7rem;height:5.7rem}.subtitle{font-family:Myriad Pro,sans-serif;font-weight:400;text-transform:uppercase;font-size:1.963rem;height:1.347rem;margin:0}.subtitle_blue,.subtitle_bold{font-weight:700}.subtitle_blue{color:#0270ba}.text{font-family:Myriad Pro,sans-serif;font-weight:400;font-size:1.193rem;margin:0}@media (max-width:605px){.text{font-size:2rem}}.items{position:relative}.items:before{content:"";position:absolute;width:1.5rem;height:1.5rem;left:-3rem;top:.4rem;background-color:#000;border-radius:50%}.items__date{font-family:Myriad Pro,sans-serif;font-weight:400;color:#000;padding-left:1.3rem;font-size:1.963rem}@media (max-width:605px){.items__date{padding-left:0}}.items__text{margin:1.42rem 0 .8em}.items__header{display:flex}@media (max-width:605px){.items__header{flex-direction:column}}.body{display:flex;max-width:1920px;min-width:320px;justify-content:space-between}@media (max-width:1155px){.body{display:block;max-width:1000px;margin:auto}}.body__header{margin:0 0 5.5rem;padding-top:6.35rem}.body__profile{margin:0 0 2.7rem}.body__education{margin:0 0 3.3rem}.body__experience{margin:0 0 3.2rem}.body__first-column{max-width:34%;margin:0 3%}@media (max-width:1155px){.body__first-column{max-width:100%}}.body__second-column{max-width:52%;padding-top:4.7rem;margin:0 3%}@media (max-width:1155px){.body__second-column{max-width:100%}}.header__frame{height:17.9rem;width:17.9rem;border-radius:50%;border:1px solid #0270ba;display:flex;justify-content:center;align-items:center;margin:0 auto 2rem}.header__photo{height:15.59rem;width:15.59rem;border-radius:50%;background-color:#0270ba}.header__title{font-family:Myriad Pro,sans-serif;font-weight:300;text-transform:uppercase;font-size:4rem;height:2.849rem;margin:0 0 1rem;padding:0;text-align:center}.header__title_type_bold{font-weight:700;font-size:4.63rem;margin-bottom:2.1rem;height:3.272rem}.header__subtitle{font-weight:700;text-align:center;margin:0}.profile__text{font-weight:700}.contact__items{display:flex;flex-wrap:wrap;width:100%;margin:1.5rem .2rem .7rem}.contact__termin{width:30%;font-weight:700;text-transform:uppercase;color:#0270ba;margin:0 0 2.4vw}.contact__description,.contact__termin{flex-shrink:0;text-align:left;font-size:1.578rem;font-family:Myriad Pro,sans-serif}.contact__description{width:70%;margin:0;font-weight:400}.skills__items{text-align:center;margin:auto}.skills__dot{height:1.347rem;width:1.347rem;background-color:#e6e6e6;border-radius:50%;display:inline-block;margin:0 .924rem 1.5rem 0}.skills__dot_color_blue{background-color:#0270ba}.skills__title{margin:0 0 1rem}.skills__subtitle{margin-bottom:1.6rem}.education__list{list-style-type:none;margin-left:33px}.education__subtitle{margin-bottom:1.232rem}.experience__list{list-style-type:none;margin-left:33px}.experience__subtitle{margin-bottom:1.232rem}.experience__title{margin-bottom:2.4rem}.software__bar{-webkit-appearance:none;appearance:none;width:96%;height:13%;margin-bottom:1.2rem}.software__bar::-webkit-progress-value{background-color:#0270ba}.software__bar::-webkit-progress-bar{background-color:#e6e6e6}.software__inner{display:flex;justify-content:space-between}.software__column{width:45%;flex-shrink:0}.software__title{margin-bottom:1.25rem}.software__subtitle{margin-bottom:2rem}
+@charset "UTF-8";
+
+@font-face {
+    font-family: Myriad Pro;
+    src: local("☺"), url(fonts/MyriadPro-Bold.woff) format("woff"), url(fonts/MyriadPro-Bold.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Myriad Pro;
+    src: local("☺"), url(fonts/MyriadPro-LightSemiExt.woff) format("woff"), url(fonts/MyriadPro-LightSemiExt.ttf) format("truetype");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Myriad Pro;
+    src: local("☺"), url(fonts/MyriadPro-Regular.woff) format("woff"), url(fonts/MyriadPro-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+.document {
+    font-size: 20px
+}
+
+@media (max-width:1638px) {
+    .document {
+        font-size: 17px
+    }
+}
+
+@media (max-width:1395px) {
+    .document {
+        font-size: 14px
+    }
+}
+
+@media (max-width:605px) {
+    .document {
+        font-size: 10px
+    }
+}
+
+.title {
+    height: 7rem
+}
+
+.title,
+.title__text {
+    display: flex;
+    align-items: center
+}
+
+.title__text {
+    font-size: 3.157rem;
+    font-family: Myriad Pro, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0270ba;
+    padding-left: .8rem;
+    flex-shrink: 1;
+    flex-grow: 1;
+    margin: 0
+}
+
+.title__text:after {
+    content: "";
+    width: 100%;
+    height: .36vw;
+    background: #0270ba;
+    margin-left: 10px
+}
+
+.title__image {
+    width: 5.7rem;
+    height: 5.7rem
+}
+
+.subtitle {
+    font-family: Myriad Pro, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.963rem;
+    height: 1.347rem;
+    margin: 0
+}
+
+.subtitle_blue,
+.subtitle_bold {
+    font-weight: 700
+}
+
+.subtitle_blue {
+    color: #0270ba
+}
+
+.text {
+    font-family: Myriad Pro, sans-serif;
+    font-weight: 400;
+    font-size: 1.193rem;
+    margin: 0
+}
+
+@media (max-width:605px) {
+    .text {
+        font-size: 2rem
+    }
+}
+
+.items {
+    position: relative
+}
+
+.items:before {
+    content: "";
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    left: -3rem;
+    top: .4rem;
+    background-color: #000;
+    border-radius: 50%
+}
+
+.items__date {
+    font-family: Myriad Pro, sans-serif;
+    font-weight: 400;
+    color: #000;
+    padding-left: 1.3rem;
+    font-size: 1.963rem
+}
+
+@media (max-width:605px) {
+    .items__date {
+        padding-left: 0
+    }
+}
+
+.items__text {
+    margin: 1.42rem 0 .8em
+}
+
+.items__header {
+    display: flex
+}
+
+@media (max-width:605px) {
+    .items__header {
+        flex-direction: column
+    }
+}
+
+.body {
+    display: flex;
+    max-width: 1920px;
+    min-width: 320px;
+    justify-content: space-between
+}
+
+@media (max-width:1155px) {
+    .body {
+        display: block;
+        max-width: 1000px;
+        margin: auto
+    }
+}
+
+.body__header {
+    margin: 0 0 5.5rem;
+    padding-top: 6.35rem
+}
+
+.body__profile {
+    margin: 0 0 2.7rem
+}
+
+.body__education {
+    margin: 0 0 3.3rem
+}
+
+.body__experience {
+    margin: 0 0 3.2rem
+}
+
+.body__first-column {
+    max-width: 34%;
+    margin: 0 3%
+}
+
+@media (max-width:1155px) {
+    .body__first-column {
+        max-width: 100%
+    }
+}
+
+.body__second-column {
+    max-width: 52%;
+    padding-top: 4.7rem;
+    margin: 0 3%
+}
+
+@media (max-width:1155px) {
+    .body__second-column {
+        max-width: 100%
+    }
+}
+
+.header__frame {
+    height: 17.9rem;
+    width: 17.9rem;
+    border-radius: 50%;
+    border: 1px solid #0270ba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 2rem
+}
+
+.header__photo {
+    height: 15.59rem;
+    width: 15.59rem;
+    border-radius: 50%;
+    background-color: #0270ba
+}
+
+.header__title {
+    font-family: Myriad Pro, sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 4rem;
+    height: 2.849rem;
+    margin: 0 0 1rem;
+    padding: 0;
+    text-align: center
+}
+
+.header__title_type_bold {
+    font-weight: 700;
+    font-size: 4.63rem;
+    margin-bottom: 2.1rem;
+    height: 3.272rem
+}
+
+.header__subtitle {
+    font-weight: 700;
+    text-align: center;
+    margin: 0
+}
+
+.profile__text {
+    font-weight: 700
+}
+
+.contact__items {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 1.5rem .2rem .7rem
+}
+
+.contact__termin {
+    width: 30%;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0270ba;
+    margin: 0 0 2.4vw
+}
+
+.contact__description,
+.contact__termin {
+    flex-shrink: 0;
+    text-align: left;
+    font-size: 1.578rem;
+    font-family: Myriad Pro, sans-serif
+}
+
+.contact__description {
+    width: 70%;
+    margin: 0;
+    font-weight: 400
+}
+
+.skills__items {
+    text-align: center;
+    margin: auto
+}
+
+.skills__dot {
+    height: 1.347rem;
+    width: 1.347rem;
+    background-color: #e6e6e6;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 .924rem 1.5rem 0
+}
+
+.skills__dot_color_blue {
+    background-color: #0270ba
+}
+
+.skills__title {
+    margin: 0 0 1rem
+}
+
+.skills__subtitle {
+    margin-bottom: 1.6rem
+}
+
+.education__list {
+    list-style-type: none;
+    margin-left: 33px
+}
+
+.education__subtitle {
+    margin-bottom: 1.232rem
+}
+
+.experience__list {
+    list-style-type: none;
+    margin-left: 33px
+}
+
+.experience__subtitle {
+    margin-bottom: 1.232rem
+}
+
+.experience__title {
+    margin-bottom: 2.4rem
+}
+
+.software__bar {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 96%;
+    height: 13%;
+    margin-bottom: 1.2rem
+}
+
+.software__bar::-webkit-progress-value {
+    background-color: #0270ba
+}
+
+.software__bar::-webkit-progress-bar {
+    background-color: #e6e6e6
+}
+
+.software__inner {
+    display: flex;
+    justify-content: space-between
+}
+
+.software__column {
+    width: 45%;
+    flex-shrink: 0
+}
+
+.software__title {
+    margin-bottom: 1.25rem
+}
+
+.software__subtitle {
+    margin-bottom: 2rem
+}
