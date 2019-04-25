@@ -1,3 +1,4 @@
+import './components/document/favicon.png';
 import './components/profile/profile.svg';
 import './components/contact/contact.svg';
 import './components/skills/skills.svg';
